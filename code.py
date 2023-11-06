@@ -1,14 +1,14 @@
 # SPDX-FileCopyrightText: 2021 ladyada for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
-"""Simpletest Example that shows how to get temperature,
-   pressure, and altitude readings from a BMP280"""
+"""Simpletest Example that shows:
+    - how to get temperature, pressure, and altitude readings from a BMP280
+    - how to get temperature and humidity readings from a Si7021
+"""
 import time
 import board
 import busio
 import adafruit_si7021
-
-# import digitalio # For use with SPI
 import adafruit_bmp280
 
 # Create sensor object, communicating over the board's default I2C bus
